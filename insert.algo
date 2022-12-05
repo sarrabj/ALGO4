@@ -1,0 +1,30 @@
+void insertionSortFunction (int arrSample[], int n)
+
+
+{ 
+
+    int i, key, x; 
+
+    for (i = 1; i < n; i++)
+
+    { 
+
+        key = arrSample [i]; 
+
+        x = i - 1; 
+
+        while (x >= 0 && arrSample [x] > key) 
+
+        { 
+
+            arrSample [x + 1] = arrSample [x]; 
+
+            x = x - 1; 
+
+        } 
+
+        arrSample [x + 1] = key; 
+
+    } 
+
+} 
